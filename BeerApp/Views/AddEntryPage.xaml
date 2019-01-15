@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="BeerApp.Views.AddEntryPage"
+             xmlns:rating="clr-namespace:Syncfusion.SfRating.XForms;assembly=Syncfusion.SfRating.XForms"
+             xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             xmlns:editor="clr-namespace:BeerApp.CustomElements"> 
+  
+    <StackLayout x:Name="stackLayout"
+                 HeightRequest="500"
+                 WidthRequest="300"
+                 HorizontalOptions="CenterAndExpand"
+                 VerticalOptions="CenterAndExpand"
+                 Padding="10,10,10,10">
+        
+        <StackLayout Orientation="Horizontal">
+            <ffimageloadingsvg:SvgCachedImage Source="{StaticResource nameIcon}"
+                                              Style="{StaticResource iconStyle}"/>
+            <Entry x:Name="name"
+                   Placeholder="Beer Name"
+                   HorizontalOptions="FillAndExpand"
+                   Keyboard="Default">
+            </Entry>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <ffimageloadingsvg:SvgCachedImage Source="{StaticResource breweryIcon}"
+                                              Style="{StaticResource iconStyle}"/>
+            <Entry x:Name="brewery"
+                   Placeholder="Brewery"
+                   HorizontalOptions="FillAndExpand"
+                   Keyboard="Default">
+            </Entry>
+        </StackLayout>
+
+
+        <StackLayout Orientation="Horizontal">
+            <ffimageloadingsvg:SvgCachedImage Source="{StaticResource styleIcon}"
+                                              Style="{StaticResource iconStyle}"/>
+            <Entry x:Name="style"
+                   Placeholder="Style (IPA, Lager, etc.)"
+                   HorizontalOptions="FillAndExpand"
+                   Keyboard="Default">
+            </Entry>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <ffimageloadingsvg:SvgCachedImage Source="{StaticResource abvIcon}"
+                                              Style="{StaticResource iconStyle}"/>
+            <Entry x:Name="abv"
+                   Placeholder="ABV(%)"
+                   HorizontalOptions="FillAndExpand"
+                   Keyboard="Numeric">
+            </Entry>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <ffimageloadingsvg:SvgCachedImage Source="{StaticResource flavorIcon}"
+                                              Style="{StaticResource iconStyle}"/>
+            <Entry x:Name="flavor"
+                   Placeholder="Flavor"
+                   HorizontalOptions="FillAndExpand"
+                   Keyboard="Default">
+            </Entry>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <ffimageloadingsvg:SvgCachedImage Source="{StaticResource colorIcon}"
+                                              Style="{StaticResource iconStyle}"/>
+            <Entry x:Name="color"
+                   Placeholder="Color"
+                   HorizontalOptions="FillAndExpand"
+                   Keyboard="Default">
+            </Entry>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <ffimageloadingsvg:SvgCachedImage Source="{StaticResource commentsIcon}"
+                                                      Style="{StaticResource iconStyle}"/>
+            <Frame BorderColor="LightGray"
+                   HasShadow="false"
+                   HorizontalOptions="FillAndExpand"
+                   Padding="0">
+                <Frame.Content>
+                    <StackLayout>
+                        <editor:EditorWithPlaceholder x:Name="comments"
+                                                      MaxLength="100"
+                                                      HeightRequest="100"
+                                                      VerticalOptions="Start"
+                                                      Placeholder="Comments"
+                                                      Keyboard="Default">
+                        </editor:EditorWithPlaceholder>
+                    </StackLayout>
+                </Frame.Content>
+            </Frame>
+        </StackLayout>
+        
+
+        <StackLayout Orientation="Horizontal">
+            <ffimageloadingsvg:SvgCachedImage Source="{StaticResource ratingIcon}"
+                                              Style="{StaticResource iconStyle}"/>
+            <rating:SfRating x:Name="rating"
+                             ItemCount="5"
+                             Precision="Half"
+                             HorizontalOptions="FillAndExpand"
+                             Margin="30,0,0,0"
+                             ItemSize="30">
+                <rating:SfRating.RatingSettings>
+                    <rating:SfRatingSettings RatedFill="{StaticResource primary}"
+                                             UnRatedFill="Transparent"
+                                             RatedStroke="{StaticResource primary}"
+                                             UnRatedStroke="LightGray">
+                    </rating:SfRatingSettings>
+                </rating:SfRating.RatingSettings>
+            </rating:SfRating>
+        </StackLayout>
+
+       
+        <Button x:Name="save"
+                Text="Add Beer"
+                BackgroundColor="{StaticResource primary}"
+                TextColor="White"
+                Margin="10,20,10,10"
+                Clicked="Add_Clicked">
+        </Button>
+        
+    </StackLayout>
+    
+</ContentPage>

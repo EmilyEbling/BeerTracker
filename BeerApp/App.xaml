@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             x:Class="BeerApp.App">
+    
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <Style x:Key="iconStyle" TargetType="ffimageloadingsvg:SvgCachedImage">
+                <Setter Property="HeightRequest" Value="30"/>
+                <Setter Property="WidthRequest" Value="30"/>
+                <Setter Property="Margin" Value="0,0,5,0"/>
+                <Setter Property="HorizontalOptions" Value="Start"/>
+            </Style>
+        </ResourceDictionary>
+            
+        <ResourceDictionary>
+            <Color x:Key="primary">#5687a5 </Color>
+            <Color x:Key="darkest">#133d56</Color>
+            <Color x:Key="dark">#376785</Color>
+            <Color x:Key="lightest">#c0daea</Color>
+            <Color x:Key="light">#7eb3d4 </Color>
+        </ResourceDictionary>
+
+        <ResourceDictionary>
+            <x:String x:Key="nameIcon">resource://BeerApp.Resources.name.svg</x:String>
+            <x:String x:Key="breweryIcon">resource://BeerApp.Resources.brewery.svg</x:String>
+            <x:String x:Key="styleIcon">resource://BeerApp.Resources.style.svg</x:String>
+            <x:String x:Key="abvIcon">resource://BeerApp.Resources.abv.svg</x:String>
+            <x:String x:Key="flavorIcon">resource://BeerApp.Resources.flavor.svg</x:String>
+            <x:String x:Key="colorIcon">resource://BeerApp.Resources.color.svg</x:String>
+            <x:String x:Key="ratingIcon">resource://BeerApp.Resources.rating.svg</x:String>
+            <x:String x:Key="commentsIcon">resource://BeerApp.Resources.comments.svg</x:String>
+            <x:String x:Key="bottleIcon">resource://BeerApp.Resources.beer-bottle.svg</x:String>
+            <x:String x:Key="tapIcon">resource://BeerApp.Resources.beer-tap.svg</x:String>
+            <x:String x:Key="glass1">resource://BeerApp.Resources.glass1.svg</x:String>
+            <x:String x:Key="glass2">resource://BeerApp.Resources.glass2.svg</x:String>
+            <x:String x:Key="glass3">resource://BeerApp.Resources.glass3.svg</x:String>
+            <x:String x:Key="glass4">resource://BeerApp.Resources.glass4.svg</x:String>
+            <x:String x:Key="glass5">resource://BeerApp.Resources.glass5.svg</x:String>
+            <x:String x:Key="glass6">resource://BeerApp.Resources.glass6.svg</x:String>
+            <x:String x:Key="profile">resource://BeerApp.Resources.user.svg</x:String>
+        </ResourceDictionary>
+        
+    </Application.Resources>
+    
+</Application>

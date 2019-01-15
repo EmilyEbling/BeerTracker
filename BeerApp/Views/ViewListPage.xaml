@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="BeerApp.Views.ViewListPage"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             xmlns:beerapp="clr-namespace:BeerApp.Models"
+             xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms">
+  
+    <ContentPage.Content>
+        <tabView:SfTabView VisibleHeaderCount="2"
+                           TabHeaderPosition="Top"
+                           TabHeaderBackgroundColor="White">
+            
+            <tabView:SfTabView.SelectionIndicatorSettings>
+                <tabView:SelectionIndicatorSettings Color="{StaticResource primary}" Position="Bottom"/>
+            </tabView:SfTabView.SelectionIndicatorSettings>
+            
+            <tabView:SfTabItem x:Name="nameTab"
+                               Title="Name"
+                               TitleFontColor="{StaticResource primary}"
+                               SelectionColor="{StaticResource primary}"
+                               TitleFontSize="20">
+                <tabView:SfTabItem.Content>
+                    <ScrollView>
+                        <StackLayout x:Name="nameStackLayout" Margin="10,10,10,10"/>
+                    </ScrollView>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+
+            <tabView:SfTabItem x:Name="breweryTab"
+                               Title="Brewery"
+                               TitleFontColor="{StaticResource primary}"
+                               SelectionColor="{StaticResource primary}"
+                               TitleFontSize="20">
+                <tabView:SfTabItem.Content>
+                    <ScrollView>
+                        <StackLayout x:Name="breweryStackLayout" Margin="10,10,10,10"/>
+                    </ScrollView>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            
+        </tabView:SfTabView>
+    </ContentPage.Content>
+
+</ContentPage>

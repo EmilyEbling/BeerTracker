@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="BeerApp.Views.SuggestionPage"
+             xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit">
+    
+    <StackLayout>
+
+        <Label x:Name="option"
+              Text="Select Search Category"
+              FontSize="25"
+              HorizontalOptions="Center"
+              Margin="10, 10, 10, 40">
+       </Label>
+        
+        <input:CheckBox x:Name="companyCheck"
+                        Text="Company"
+                        Color="Purple">
+        </input:CheckBox>
+
+        <Entry x:Name="companySearch"
+               Placeholder="Company Name"
+               IsEnabled="false">
+        </Entry>
+        
+        <input:CheckBox x:Name="styleCheck"
+                        Text="Style"
+                        Color="Purple">
+        </input:CheckBox>
+
+        <Entry x:Name="styleSearch"
+               Placeholder="Style Type"
+               IsEnabled="false">
+        </Entry>
+
+        <input:CheckBox x:Name="flavorCheck"
+                        Text="Flavor"
+                        Color="Purple">
+        </input:CheckBox>
+
+        <Entry x:Name="flavorSearch"
+               Placeholder="Flavor"
+               IsEnabled="false">
+        </Entry>
+        
+        <input:CheckBox x:Name="colorCheck"
+                        Text="Color"
+                        Color="Purple">
+        </input:CheckBox>
+
+        <Entry x:Name="colorSearch"
+               Placeholder="Color"
+               IsEnabled="false">
+        </Entry>
+
+        <input:CheckBox x:Name="ratingCheck"
+                        Text="Rating"
+                        Color="Purple">
+        </input:CheckBox>
+        
+    </StackLayout>
+
+    
+</ContentPage>

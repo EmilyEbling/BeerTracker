@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             x:Class="BeerApp.Views.ProfilePage">
+    
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center"
+                     Padding="20">
+            <ffimageloadingsvg:SvgCachedImage Source="{StaticResource profile}"
+                                              HeightRequest="60"
+                                              WidthRequest="60"
+                                              Margin="0,0,0,20"/>
+            <Entry x:Name="name"
+                   WidthRequest="200"/>
+            <Entry x:Name="username"
+                   WidthRequest="200"/>
+            <Button x:Name="save"
+                    Text="Save"
+                    BackgroundColor="{StaticResource primary}"
+                    TextColor="White"
+                    WidthRequest="200"/>
+        </StackLayout>
+        
+    </ContentPage.Content>
+    
+</ContentPage>

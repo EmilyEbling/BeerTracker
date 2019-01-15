@@ -1,0 +1,96 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+    <PackageReference Include="Syncfusion.Xamarin.SfRating" Version="16.2.0.50" />
+    <PackageReference Include="Xamarin.Forms.InputKit" Version="2.3.0" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.4.118" />
+    <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.3.840" />
+    <PackageReference Include="Syncfusion.Xamarin.SfTabView" Version="16.2.0.50" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="Models\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Resources\" />
+    <Folder Include="CustomElements\" />
+    <Folder Include="Resources\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Pages\HomePage.cs" />
+    <Compile Remove="Pages\MyPage.xaml.cs" />
+    <Compile Remove="Models\BeerType.cs" />
+    <Compile Remove="LCEntryRenderer.cs" />
+    <Compile Remove="Behaviors\UsernameCheckBehavior.cs" />
+    <Compile Remove="Views\MyPage.xaml.cs" />
+    <Compile Remove="Views\HomePage.cs" />
+    <Compile Remove="ViewModels\UserListViewModel.cs" />
+    <Compile Remove="ViewModels\DetailsViewModel.cs" />
+    <Compile Remove="Helpers\ISQLite.cs" />
+    <Compile Remove="Services\IUserRepository.cs" />
+    <Compile Remove="Services\UserRepository.cs" />
+    <Compile Remove="Validator\UserValidator.cs" />
+    <Compile Remove="ViewModels\AddUserViewModel.cs" />
+    <Compile Remove="Utilities\LCEntry.cs" />
+    <Compile Remove="ViewModels\BreweryViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Pages\MyPage.xaml" />
+    <EmbeddedResource Remove="Views\MyPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove=".DS_Store" />
+    <None Remove="Resources\abv.svg" />
+    <None Remove="Resources\brewery.svg" />
+    <None Remove="Resources\color.svg" />
+    <None Remove="Resources\comments.svg" />
+    <None Remove="Resources\flavor.svg" />
+    <None Remove="Resources\name.svg" />
+    <None Remove="Resources\rating.svg" />
+    <None Remove="Resources\style.svg" />
+    <None Remove="Resources\nameWhite.svg" />
+    <None Remove="Resources\cheers.svg" />
+    <None Remove="Resources\beer-bottle.svg" />
+    <None Remove="Resources\beer-tap.svg" />
+    <None Remove="Resources\glass1.svg" />
+    <None Remove="Resources\glass2.svg" />
+    <None Remove="Resources\glass3.svg" />
+    <None Remove="Resources\glass4.svg" />
+    <None Remove="Resources\glass5.svg" />
+    <None Remove="Resources\glass6.svg" />
+    <None Remove="Resources\expand.svg" />
+    <None Remove="Resources\bottle-cap.svg" />
+    <None Remove="Resources\smallName.svg" />
+    <None Remove="Resources\smallBeer.png" />
+    <None Remove="Resources\user.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Xamarin.iOS">
+      <HintPath>..\..\..\..\..\Library\Frameworks\Xamarin.iOS.framework\Versions\Current\lib\mono\Xamarin.iOS\Xamarin.iOS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\abv.svg" />
+    <EmbeddedResource Include="Resources\brewery.svg" />
+    <EmbeddedResource Include="Resources\color.svg" />
+    <EmbeddedResource Include="Resources\comments.svg" />
+    <EmbeddedResource Include="Resources\flavor.svg" />
+    <EmbeddedResource Include="Resources\name.svg" />
+    <EmbeddedResource Include="Resources\rating.svg" />
+    <EmbeddedResource Include="Resources\style.svg" />
+    <EmbeddedResource Include="Resources\beer-bottle.svg" />
+    <EmbeddedResource Include="Resources\glass1.svg" />
+    <EmbeddedResource Include="Resources\glass2.svg" />
+    <EmbeddedResource Include="Resources\glass3.svg" />
+    <EmbeddedResource Include="Resources\glass4.svg" />
+    <EmbeddedResource Include="Resources\glass5.svg" />
+    <EmbeddedResource Include="Resources\glass6.svg" />
+    <EmbeddedResource Include="Resources\expand.svg" />
+    <EmbeddedResource Include="Resources\bottle-cap.svg" />
+    <EmbeddedResource Include="Resources\user.svg" />
+  </ItemGroup>
+</Project>

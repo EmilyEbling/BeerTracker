@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="BeerApp.Views.TermsOfUsePage">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BorderColor="{StaticResource darkest}"
+                   Margin="20,20,20,20"
+                   HasShadow="false"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+                <Frame.Content>
+                    <StackLayout>
+                        <Button Text="Return to Login"
+                            TextColor="{StaticResource darkest}"
+                            Clicked="Handle_Clicked"
+                            VerticalOptions="Start"
+                            HorizontalOptions="Center">
+                        </Button>
+                
+                        <Label Text="Pursuant to applicable laws, the PLCB is strictly prohibited from marketing, selling, or furnishing alcoholic beverages to anyone under the age of 21. It is also unlawful for anyone under the age of 21 to purchase or possess alcoholic beverages in Pennsylvania. By using this mobile application, you are certifying to the PLCB that you are at least 21 years of age and legally authorized to purchase and possess alcoholic beverages."
+                               FontSize="Micro"
+                               TextColor="{StaticResource darkest}"
+                               VerticalOptions="FillAndExpand"> 
+                        </Label>
+                    </StackLayout>
+                </Frame.Content>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             x:Class="BeerApp.Views.HomePage">
+
+    <StackLayout x:Name="stackLayout"
+                 Padding="20, 80, 20, 80">   
+        
+        <!--<ffimageloadingsvg:SvgCachedImage Source="{StaticResource tapIcon}"
+                                          HeightRequest="90"
+                                          WidthRequest="90"
+                                          Margin="0,0,0,20">
+        </ffimageloadingsvg:SvgCachedImage>-->
+        
+        <Label x:Name="welcome"
+               TextColor="{StaticResource primary}"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               Margin="0,0,0,30">
+        </Label>
+
+        <Frame BorderColor="Transparent"
+               HasShadow="false"
+               HeightRequest="400"
+               WidthRequest="50">
+            <Frame.Content>
+                <Grid RowSpacing="10"
+                      ColumnSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height=".5*"/>
+                        <RowDefinition Height=".5*"/>
+                        <RowDefinition Height=".5*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width=".5*"/>
+                        <ColumnDefinition Width=".5*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Frame x:Name="viewFrame"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                           HasShadow="false"
+                           BorderColor="{StaticResource primary}">
+                        <Frame.Content>
+                            <StackLayout HorizontalOptions="Center"
+                                         VerticalOptions="Center">
+                                <ffimageloadingsvg:SvgCachedImage Source="{StaticResource glass1}"
+                                                                  HeightRequest="40"
+                                                                  WidthRequest="40"/>
+                                <Label x:Name="view"
+                                        Text="View Beer"
+                                        TextColor="{StaticResource primary}"
+                                        FontSize="Small">
+                                </Label>
+                            </StackLayout>
+                        </Frame.Content>
+                    </Frame>
+
+                    <Frame x:Name="addFrame"
+                           Grid.Row="0"
+                           Grid.Column="1"
+                           HasShadow="false"
+                           BorderColor="{StaticResource primary}">
+                        <Frame.Content>
+                            <StackLayout HorizontalOptions="Center"
+                                         VerticalOptions="Center">
+                                <ffimageloadingsvg:SvgCachedImage Source="{StaticResource glass2}"
+                                                                  HeightRequest="40"
+                                                                  WidthRequest="40"/>
+                                <Label x:Name="add"
+                                        Text="Add Entry"
+                                        TextColor="{StaticResource primary}"
+                                        FontSize="Small">
+                                </Label>
+                            </StackLayout>
+                        </Frame.Content>
+                    </Frame>
+
+                    <Frame x:Name="suggestFrame"
+                           Grid.Row="1"
+                           Grid.Column="0"
+                           HasShadow="false"
+                           BorderColor="{StaticResource primary}">
+                        <Frame.Content>
+                            <StackLayout HorizontalOptions="Center"
+                                         VerticalOptions="Center">
+                                <ffimageloadingsvg:SvgCachedImage Source="{StaticResource glass3}"
+                                                                  HeightRequest="40"
+                                                                  WidthRequest="40"/>
+                                <Label x:Name="suggest"
+                                        Text="Suggestion"
+                                        TextColor="{StaticResource primary}"
+                                        FontSize="Small">
+                                </Label>
+                            </StackLayout>
+                        </Frame.Content>
+                    </Frame>
+
+                    <Frame x:Name="profileFrame"
+                           Grid.Row="1"
+                           Grid.Column="1"
+                           HasShadow="false"
+                           BorderColor="{StaticResource primary}">
+                        <Frame.Content>
+                            <StackLayout HorizontalOptions="Center"
+                                         VerticalOptions="Center">
+                                <ffimageloadingsvg:SvgCachedImage Source="{StaticResource glass4}"
+                                                                  HeightRequest="40"
+                                                                  WidthRequest="40"/>
+                                <Label x:Name="profile"
+                                        Text="Profile"
+                                        TextColor="{StaticResource primary}"
+                                        FontSize="Small">
+                                </Label>
+                            </StackLayout>
+                        </Frame.Content>
+                    </Frame>
+
+                    <Frame x:Name="favoritesFrame"
+                           Grid.Row="2"
+                           Grid.Column="0"
+                           HasShadow="false"
+                           BorderColor="{StaticResource primary}">
+                        <Frame.Content>
+                            <StackLayout HorizontalOptions="Center"
+                                         VerticalOptions="Center">
+                                <ffimageloadingsvg:SvgCachedImage Source="{StaticResource glass5}"
+                                                                  HeightRequest="40"
+                                                                  WidthRequest="40"/>
+                                <Label x:Name="favorites"
+                                        Text="Favorites"
+                                        TextColor="{StaticResource primary}"
+                                        FontSize="Small">
+                                </Label>
+                            </StackLayout>
+                        </Frame.Content>
+                    </Frame>
+                    
+                    <Frame x:Name="idkFrame"
+                           Grid.Row="2"
+                           Grid.Column="1"
+                           HasShadow="false"
+                           BorderColor="{StaticResource primary}">
+                        <Frame.Content>
+                            <StackLayout HorizontalOptions="Center"
+                                         VerticalOptions="Center">
+                                <ffimageloadingsvg:SvgCachedImage Source="{StaticResource glass6}"
+                                                                  HeightRequest="40"
+                                                                  WidthRequest="40"/>
+                                <Label x:Name="idk"
+                                        Text="IDK"
+                                        TextColor="{StaticResource primary}"
+                                        FontSize="Small">
+                                </Label>
+                            </StackLayout>
+                        </Frame.Content>
+                    </Frame>
+                    
+                </Grid>
+            </Frame.Content>
+        </Frame>
+        
+    </StackLayout>
+ 
+</ContentPage>

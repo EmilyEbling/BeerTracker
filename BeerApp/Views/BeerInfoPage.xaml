@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             x:Class="BeerApp.Views.BeerInfoPage">
+    
+    <StackLayout Margin="20,40,20,40">
+        <Frame BorderColor="{StaticResource primary}"
+               HasShadow="false"
+               VerticalOptions="CenterAndExpand">
+            <Frame.Content>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <ffimageloadingsvg:SvgCachedImage Source="{StaticResource nameIcon}"
+                                                          Style="{StaticResource iconStyle}"/>
+                        <Label x:Name="name"
+                               HorizontalOptions="FillAndExpand">
+                        </Label>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <ffimageloadingsvg:SvgCachedImage Source="{StaticResource breweryIcon}"
+                                                          Style="{StaticResource iconStyle}"/>
+                        <Label x:Name="brewery"
+                               HorizontalOptions="FillAndExpand">
+                        </Label>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <ffimageloadingsvg:SvgCachedImage Source="{StaticResource styleIcon}"
+                                                          Style="{StaticResource iconStyle}"/>
+                        <Label x:Name="style"
+                               HorizontalOptions="FillAndExpand">
+                        </Label>
+                    </StackLayout>   
+                    
+                    <StackLayout Orientation="Horizontal">
+                        <ffimageloadingsvg:SvgCachedImage Source="{StaticResource abvIcon}"
+                                                          Style="{StaticResource iconStyle}"/>
+                        <Label x:Name="abv"
+                               HorizontalOptions="FillAndExpand">
+                        </Label>
+                    </StackLayout> 
+                    
+                    <StackLayout Orientation="Horizontal">
+                        <ffimageloadingsvg:SvgCachedImage Source="{StaticResource flavorIcon}"
+                                                          Style="{StaticResource iconStyle}"/>
+                        <Label x:Name="flavor"
+                               HorizontalOptions="FillAndExpand">
+                        </Label>
+                    </StackLayout>   
+
+                    <StackLayout Orientation="Horizontal">
+                        <ffimageloadingsvg:SvgCachedImage Source="{StaticResource colorIcon}"
+                                                          Style="{StaticResource iconStyle}"/>
+                        <Label x:Name="color"
+                               HorizontalOptions="FillAndExpand">
+                        </Label>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <ffimageloadingsvg:SvgCachedImage Source="{StaticResource commentsIcon}"
+                                                          Style="{StaticResource iconStyle}"/>
+                        <Label x:Name="comments"
+                               HorizontalOptions="FillAndExpand">
+                        </Label>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                        <ffimageloadingsvg:SvgCachedImage Source="{StaticResource ratingIcon}"
+                                                          Style="{StaticResource iconStyle}"/>
+                        <Label x:Name="rating"
+                               HorizontalOptions="FillAndExpand">
+                        </Label>
+                    </StackLayout>
+                </StackLayout>
+            </Frame.Content>
+        </Frame>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="10,20,10,20">
+            <Button x:Name="edit"
+                    Text="Edit Beer"
+                    TextColor="White"
+                    BackgroundColor="{StaticResource primary}"
+                    WidthRequest="150"
+                    HorizontalOptions="Center"/>
+            <Button x:Name="delete"
+                    Text="Delete Beer"
+                    TextColor="White"
+                    BackgroundColor="{StaticResource primary}"
+                    WidthRequest="150"
+                    HorizontalOptions="Center"/>
+        </StackLayout>
+        
+    </StackLayout>
+    
+</ContentPage>
